@@ -1,4 +1,4 @@
-\documentclass[10pt,]{article}
+\documentclass[11pt,]{article}
 \usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
 \geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
 \usepackage{graphicx}			% insertar gráficos
@@ -9,7 +9,6 @@
 % https://www.nacho-alvarez.es/index.php/blog/2007/04/15/estilo-de-bibliografia-para-bibtex/
 % http://www.latex.um.es/retazos/leccion_15/flexbib_manual.pdf
 % Editato el spanishbst.tex y flexbib.sty
-\usepackage{flexbib}	
 \usepackage{appendix} % Anexos%
 \usepackage{subfigure} % Para incluir varias figuras
 \usepackage{booktabs}
@@ -17,14 +16,17 @@
 \usepackage{multirow}
 \usepackage{float}
 \usepackage{fontspec,xltxtra,xunicode}		% Por defecto
+\usepackage{lscape}
+\usepackage{framed, color}
 \defaultfontfeatures{Mapping=tex-text}		% Para usar Century Gothic
 \setmainfont[		% Para usar Century Gothic
- BoldFont={Century Gothic Bold}, 
- ItalicFont={Century Gothic Italic},
- BoldItalicFont={Century Gothic Bold Italic}]{Century Gothic}
+ BoldFont={Arial Bold}, 
+ ItalicFont={Arial Italic},
+ BoldItalicFont={Arial Bold Italic}]{Arial}
 \usepackage{float} %para usar [H]
+\usepackage[table,xcdraw]{xcolor}
 \bibpunct{(}{)}{;}{a}{,}{,} % Modificar como se cita https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management
-
+\definecolor{shadecolor}{rgb}{1,0.8,0.3}
 \renewcommand{\bibsection}{\section{Bibliografía\\}} % Cambiar nombre de la bibliografía insertada al final del documento
 \renewcommand{\figurename}{Figura} % Cambiar el nombre de las figuras
 \renewcommand{\tablename}{Cuadro} % Cambiar el nombre de las tablas
@@ -46,6 +48,298 @@
 
 \begin{document}
 
+\begin{figure}[H]
+\includegraphics[width=3cm, height=3cm]{Figuras/Logo_FIA}
+\end{figure}\bigskip
+\bigskip
+
+\begin{center}
+\textbf{ {\LARGE Informe Técnico de Avance}}
+\end{center}\bigskip
+
+
+\begin{table}[H]
+\centering
+\resizebox{1.0\textwidth}{!}{%
+\begin{tabular}{|l|l|}
+\hline
+ Nombre del proyecto & \begin{tabular}[c]{@{}l@{}} Diseño de un sistema de gestión hídrica \\ para la Junta de Vigilancia de Río Elqui \\ y sus Afluentes, para mejora  la eficiencia \\ en el uso del recurso hídrico bajo \\ escenarios de cambio climático\end{tabular} \\ \hline
+Código del proyecto &  PYT - 2017 - 0215  \\ \hline                                                                                                                                              
+Nº de informe       & 1 \\ \hline                                                                                                                                                                                                                                     
+Período informado   & \begin{tabular}[c]{@{}l@{}} desde el 1 de diciembre 2017 \\ hasta el 31 de mayo 2018 \end{tabular} \\ \hline                                                                                                                                                                                                                    
+Fecha de entrega    &  9 junio de 2018  \\ \hline                                                                                                                                                                                                                            
+\end{tabular}%	
+}
+\end{table}
+
+\newpage
+
+\begin{center}
+
+\textbf{CONTENIDO}
+
+\end{center}\bigskip
+
+\newpage
+
+\section{ANTECEDENTES GENERALES}
+
+\begin{table}[H]
+\begin{tabular}{|
+>{\columncolor[HTML]{EFEFEF}}l |l|}
+\hline
+{\color[HTML]{000000} Nombre Ejecutor:} & {\color[HTML]{000000} Universidad de La Serena} \\ \hline
+{\color[HTML]{000000} Nombre(s) Asociado(s):} & {\color[HTML]{000000} Junta de Vigilancia del Río Elqui y sus Afluentes} \\ \hline
+{\color[HTML]{000000} Coordinador del Proyecto:} & {\color[HTML]{000000} Pablo Álvarez Latorre} \\ \hline
+{\color[HTML]{000000} Regiones de ejecución:} & {\color[HTML]{000000} Región de Coquimbo} \\ \hline
+{\color[HTML]{000000} Fecha de inicio iniciativa:} & {\color[HTML]{000000} 1 de diciembre de 2017} \\ \hline
+{\color[HTML]{000000} Fecha término Iniciativa:} & {\color[HTML]{000000} 30 de noviembre de 2019} \\ \hline
+\end{tabular}
+
+\end{table}
+
+\bigskip
+\section{EJECUCIÓN PRESUPUESTARIA DEL PROYECTO}
+
+\begin{table}[H]
+\begin{tabular}{|
+>{\columncolor[HTML]{EFEFEF}}c |
+>{\columncolor[HTML]{EFEFEF}}l |l|l|}
+\hline
+\multicolumn{2}{|l|}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} Costo total del proyecto}} & {\color[HTML]{000000} \$ xxxxxxxxxxx} & {\color[HTML]{000000} 0,0\% xxxxxxxxxxx} \\ \hline
+\multicolumn{2}{|l|}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} Aporte total FIA}} & {\color[HTML]{000000} \$} & {\color[HTML]{000000} 0,0\%} \\ \hline
+\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} } & {\color[HTML]{000000} Pecuniario} & {\color[HTML]{000000} \$} & {\color[HTML]{000000} 0,0\%} \\ \cline{2-4} 
+\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} } & {\color[HTML]{000000} No Pecuniario} & {\color[HTML]{000000} \$} & {\color[HTML]{000000} 0,0\%} \\ \cline{2-4} 
+\multirow{-3}{*}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} Aporte Contraparte}} & {\color[HTML]{000000} Total} & {\color[HTML]{000000} \$} & {\color[HTML]{000000} 0,0\%} \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} Acumulados a la Fecha}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} Monto (\$)}} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} Aportes FIA del proyecto}} \\ \hline
+{\color[HTML]{000000} } & {\color[HTML]{000000} Primer aporte} & {\color[HTML]{000000} XXXXXXXXXXXX} \\ \cline{2-3} 
+{\color[HTML]{000000} } & {\color[HTML]{000000} Segundo aporte} & {\color[HTML]{000000} } \\ \cline{2-3} 
+{\color[HTML]{000000} } & {\color[HTML]{000000} Tercer aporte} & {\color[HTML]{000000} } \\ \cline{2-3} 
+\multirow{-4}{*}{{\color[HTML]{000000} 1.   Aportes entregados}} & {\color[HTML]{000000} n aportes} & {\color[HTML]{000000} } \\ \hline
+\multicolumn{2}{|l|}{{\color[HTML]{000000} 2.   Total de aportes FIA entregados (suma Nº1)}} & {\color[HTML]{000000} } \\ \hline
+\multicolumn{2}{|l|}{{\color[HTML]{000000} 3.   Total de aportes FIA gastados}} & {\color[HTML]{000000} } \\ \hline
+\multicolumn{2}{|l|}{{\color[HTML]{000000} 4.   Saldo real disponible (Nº2 – Nº3) de aportes FIA}} & {\color[HTML]{000000} } \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{3}{|l|}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} Aportes Contraparte del proyecto}} \\ \hline
+{\color[HTML]{000000} } & {\color[HTML]{000000} Pecuniario} & {\color[HTML]{000000} } \\ \cline{2-3} 
+\multirow{-2}{*}{{\color[HTML]{000000} 1.  Aportes Contraparte programado}} & {\color[HTML]{000000} No Pecuniario} & {\color[HTML]{000000} } \\ \hline
+{\color[HTML]{000000} } & {\color[HTML]{000000} Pecuniario} & {\color[HTML]{000000} } \\ \cline{2-3} 
+\multirow{-2}{*}{{\color[HTML]{000000} 2.   Total de aportes Contraparte gastados}} & {\color[HTML]{000000} No Pecuniario} & {\color[HTML]{000000} } \\ \hline
+{\color[HTML]{000000} } & {\color[HTML]{000000} Pecuniario} & {\color[HTML]{000000} } \\ \cline{2-3} 
+\multirow{-2}{*}{{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}3.   Saldo real disponible (Nº1 – Nº2) \\       de aportes Contraparte\end{tabular}}} & {\color[HTML]{000000} No Pecuniario} & {\color[HTML]{000000} } \\ \hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+\subsection{Saldo real disponible en el proyecto}
+
+\begin{table}[H]
+\begin{tabular}{|
+>{\columncolor[HTML]{EFEFEF}}l |l|}
+\hline
+SI & XX \\ \hline
+NO & XX \\ \hline
+\end{tabular}
+\end{table}
+
+\bigskip
+
+\subsection{Diferencia entre el saldo real disponible y lo ingresado en el SDGL}\bigskip
+
+\section{RESUMEN DEL PERIODO}\bigskip
+
+\section{OBJETIVO GENERAL DEL PROYECTO}\bigskip
+
+Implementar un sistema de gestión hírica en el área de la JVRE, mediante un modelo hidrológico y de gestión; propuesta de una regla de gestión; y desarrollo de una interfaz de soporte de decisiones.
+
+\section{OBJETIVOS ESPECIFICOS (OE)}\bigskip
+
+\begin{enumerate}
+
+\item Identificar, caracterizar y parametrizar aquellos componentes que describan la regla operacional vigente de asignación de los recursos hídricos de la Junta de Vigilancia del Río Elqui y sus Afluentes.
+
+\item Proponer ajustes a la regla operacional vigente a partir del modelamiento hidrológico de distintos escenarios hidro-climáticos en la zona de estudio.
+
+\item Diseñar un modelo hidrológico base en función de los componentes utilizados en la regla operacional de asignación de recursos hídricos de la Junta de Vigilancia del Río Elqui y sus Afluentes.
+
+\item Diseñar e implementar una plataforma de interfaz entre el usuario y el modelo de gestión hídrica.
+
+\item Desarrollar un programa de transferencia y difusión con los resultados en el desarrollo del programa para los distintos beneficiarios de este.
+
+\end{enumerate}
+
+\subsection{Porcentaje de Avance}\bigskip
+
+\begin{table}[H]
+
+\begin{tabular}{|c|l|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Nº \\ OE\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} Descripción del OE}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}\% de avance \\ a la fecha\end{tabular}}} \\ \hline
+{\color[HTML]{000000} 1} & {\color[HTML]{000000} xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx} & {\color[HTML]{000000} } \\ \hline
+{\color[HTML]{000000} 2} & {\color[HTML]{000000} } & {\color[HTML]{000000} } \\ \hline
+{\color[HTML]{000000} 3} & {\color[HTML]{000000} } & {\color[HTML]{000000} } \\ \hline
+{\color[HTML]{000000} 4} & {\color[HTML]{000000} } & {\color[HTML]{000000} } \\ \hline
+{\color[HTML]{000000} 5} & {\color[HTML]{000000} } & {\color[HTML]{000000} } \\ \hline
+\end{tabular}
+\end{table}
+
+\bigskip
+
+\section{RESULTADOS ESPERADOS (RE)}\bigskip
+
+\subsection{Cuantificación del avance de los RE a la fecha}\bigskip
+
+\begin{table}[H]
+\begin{tabular}{|l|c|c|c|l|l|l|l|c|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}} & \cellcolor[HTML]{EFEFEF} & \cellcolor[HTML]{EFEFEF} & \multicolumn{5}{c|}{\cellcolor[HTML]{EFEFEF}Indicador de Resultados (IR)} & \cellcolor[HTML]{EFEFEF} \\ \cline{4-8}
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Nº \\ OE\end{tabular}}} & \multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Nº \\ RE\end{tabular}} & \multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Resultado \\ Esperado\\    (RE)\end{tabular}} & \begin{tabular}[c]{@{}c@{}}Nombre \\ del \\ indicador\end{tabular} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Fórmula \\ de \\ cálculo\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Estado \\ actual del \\ indicador\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Meta del \\ indicador\\ (situación \\ final)\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Fecha \\ alcance \\ meta\end{tabular}} & \multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}\% de\\ avance a \\ la fecha\end{tabular}} \\ \hline
+1 & 1 & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Criterios técnicos\\ validados para el \\ diseño de la nueva \\ regla operacional \end{tabular}} & \multicolumn{1}{l|}{} &  &  &  &  & \multicolumn{1}{l|}{} \\ \hline
+\multicolumn{9}{|l|}{Descripción y justificación del avance de los resultados esperados a la fecha.} \\ \hline
+\multicolumn{9}{|l|}{\begin{tabular}[c]{@{}l@{}}x\\ x\\ x\\ x\\ x\end{tabular}} \\ \hline
+\multicolumn{9}{|l|}{Documentación de respaldo (indique en que nº de anexo se encuentra).} \\ \hline
+\multicolumn{9}{|l|}{\begin{tabular}[c]{@{}l@{}}x\\ x\\ x\end{tabular}} \\ \hline
+\end{tabular}
+\end{table}
+
+\bigskip
+
+\begin{table}[H]
+\begin{tabular}{|l|c|c|c|l|l|l|l|c|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}} & \cellcolor[HTML]{EFEFEF} & \cellcolor[HTML]{EFEFEF} & \multicolumn{5}{c|}{\cellcolor[HTML]{EFEFEF}Indicador de Resultados (IR)} & \cellcolor[HTML]{EFEFEF} \\ \cline{4-8}
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Nº \\ OE\end{tabular}}} & \multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Nº \\ RE\end{tabular}} & \multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Resultado \\ Esperado\\    (RE)\end{tabular}} & \begin{tabular}[c]{@{}c@{}}Nombre \\ del \\ indicador\end{tabular} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Fórmula \\ de \\ cálculo\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Estado \\ actual del \\ indicador\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Meta del \\ indicador\\ (situación \\ final)\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Fecha \\ alcance \\ meta\end{tabular}} & \multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}\% de\\ avance a \\ la fecha\end{tabular}} \\ \hline
+1 & 2 & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Modelo \\ Hidrológico \\ basado en la \\ regla actual.\end{tabular}} & \multicolumn{1}{l|}{} &  &  &  &  & \multicolumn{1}{l|}{} \\ \hline
+\multicolumn{9}{|l|}{Descripción y justificación del avance de los resultados esperados a la fecha.} \\ \hline
+\multicolumn{9}{|l|}{\begin{tabular}[c]{@{}l@{}}x\\ x\\ x\\ x\\ x\end{tabular}} \\ \hline
+\multicolumn{9}{|l|}{Documentación de respaldo (indique en que nº de anexo se encuentra).} \\ \hline
+\multicolumn{9}{|l|}{\begin{tabular}[c]{@{}l@{}}x\\ x\\ x\end{tabular}} \\ \hline
+\end{tabular}
+\end{table}
+
+\bigskip
+
+\section{CAMBIOS Y/O PROBLEMAS}
+
+\begin{table}[H]
+
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Describir cambios \\ y/o problemas\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Consecuencias \\   (positivas o negativas), para \\ el cumplimiento del objetivo \\ general y/o específicos\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Ajustes realizados al proyecto para \\ abordar los cambios y/o problemas\end{tabular}} \\ \hline
+\begin{tabular}[c]{@{}l@{}}x\\ x\end{tabular} &  &  \\ \hline
+\begin{tabular}[c]{@{}l@{}}x\\ x\end{tabular} &  &  \\ \hline
+\begin{tabular}[c]{@{}l@{}}x\\ x\end{tabular} &  &  \\ \hline
+\begin{tabular}[c]{@{}l@{}}x\\ x\end{tabular} &  &  \\ \hline
+\begin{tabular}[c]{@{}l@{}}x\\ x\end{tabular} &  &  \\ \hline
+\end{tabular}
+\end{table}
+
+\bigskip
+
+\section{ACTIVIDADES REALIZADAS EN EL PERIODO}\bigskip
+
+	\subsection{Actividades programadas en el plan operativo y realizadas en el período del informe.}\bigskip
+	
+	\subsection{Actividades programadas y no realizadas en el período del informe.}\bigskip
+	
+	\subsection{Actividades programadas para otros períodos y realizadas en el período del informe.}\bigskip
+	
+	\subsection{Actividades no programadas y realizadas en el período del informe.}\bigskip
+	
+	
+\section{HITOS CRÍTICOS DEL PERÌODO}
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}Hitos críticos} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Fecha programada \\ de cumplimiento\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Cumplimiento \\   (SI / NO)\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Documentación de \\ respaldo \\   (indique en que nº de \\ anexo se encuentra)\end{tabular}} \\ \hline
+Determinar criterios \\ técnicos utilizados \\ por la JVRE para la \\ asignación de recursos \\ hídricos &  &  &  \\ \hline
+ &  &  &  \\ \hline
+ &  &  &  \\ \hline
+ &  &  &  \\ \hline
+ &  &  &  \\ \hline
+ &  &  &  \\ \hline
+ &  &  &  \\ \hline
+\end{tabular}
+\end{table}
+
+\bigskip
+
+		\subsection{En caso de hitos críticos no cumplidos en el período, explique las razones y entregue una propuesta de ajuste y solución en el corto plazo.}\bigskip
+		
+
+\section{CAMBIOS EN EL ENTORNO}\bigskip
+
+
+\section{DIFUSIÓN}\bigskip
+
+	\subsection{Actividades de difusión programadas durante el período:}
+	
+	\begin{table}[H]
+	\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	\rowcolor[HTML]{EFEFEF} 
+	Fecha & Lugar & Tipo de Actividad & \begin{tabular}[c]{@{}c@{}}Nº \\ participantes\end{tabular} & Documentación Generada \\ \hline
+	xxxxxxxx & xxxxxxxxx & xxxxxxxxxxxxx & xx & xxxxxxxxxxxxxxx \\ \hline
+	&  &  &  &  \\ \hline
+	\end{tabular}
+	\end{table}
+	
+	\bigskip
+	
+		\subsection{Actividades de difusión realizadas durante el período:}\bigskip
+	
+	\begin{table}[H]
+	\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	\rowcolor[HTML]{EFEFEF} 
+	Fecha & Lugar & Tipo de Actividad & \begin{tabular}[c]{@{}c@{}}Nº \\ participantes\end{tabular} & Documentación Generada \\ \hline
+	xxxxxxxx & xxxxxxxxx & xxxxxxxxxxxxx & xx & xxxxxxxxxxxxxxx \\ \hline
+	&  &  &  &  \\ \hline
+	\end{tabular}
+	\end{table}
+		
+		\bigskip
+		
+\section{CONCLUSIONES}\bigskip
+		
+		\subsection{¿Considera que los resultados obtenidos hasta la fecha permitirán alcanzar el objetivo general del proyecto?.}\bigskip
+				
+		\subsection{¿Considera que el objetivo general del proyecto se cumplirá en los plazos establecidos en el plan operativo?.}\bigskip
+				
+		\subsection{¿Há tenido dificultades o inconvenientes en el desarrollo del proyecto?.}\bigskip
+				
+		\subsection{¿Cómo ha sido el funcionamiento del equipo técnico del proyecto y la relación con los asociados, si los hubiere?.}\bigskip
+				
+		\subsection{En relación a lo trabajado en el período informado, ¿tiene alguna recomendación para el desarrollo futuro del proyecto?.}\bigskip
+				
+		\subsection{Mencione otros aspectos que considere relevante informar, (si los hubiere).}\bigskip
+				
+
+\section{ANEXOS}
+				
+\bigskip
+				
+				
 \section{Cuenca del río Elqui}\bigskip
 
 La cuenca del Río Elqui está ubicada en la provincia de Elqui, Región de Coquimbo, entre los paralelos 29°34’ – 30°27’ Latitud Sur y meridianos 71°22’ – 69°52’ longitud Oeste. Al norte limita con las cuencas del Río Huasco, quebrada de Los Choros, Honda y Chacay, al Sur con la cuenca del Río Limarí y las cuencas  costeras de las quebradas El Culebrón y Lagunillas, al Este con la Republica Argentina y al Oeste con el Océano Pacifico (Dattwyler, 2008).
@@ -53,6 +347,7 @@ Esta cuenca presenta un régimen nivo-pluvial, vale decir que el caudal se origi
 
 En invierno el escurrimiento es principalmente de origen pluvial  mientras que en primavera y verano es de origen nival (Galleguillos, 2004).
 El principal cauce de esta cuenca y que le da el nombre a la misma corresponde al Río Elqui, el cual se forma por la confluencia de los ríos Turbio y Claro, en las cercanías de la localidad de Rivadavia, aproximadamente a 75 km de La Serena. Las principales quebradas aportantes a este cauce natural ubicadas en la ribera norte corresponden a Marquesa y Santa Gracia. En la ribera sur destacan las quebradas de San Carlos, “Arrayan” y Talca (DGA, 2004).
+
 
 		\subsection{Hidrografía}\bigskip
 		
@@ -133,7 +428,7 @@ Agrupa a todos los canales cuyas bocatomas se encuentran adyacentes a los ríos 
 \subsection{Tercera sección.}
 Agrupa a todos aquellos canales cuyas bocatomas se encuentran adyacentes al río Elqui bajo  embalse Puclaro. Esta sección presenta un total de 13.234,16 acciones brutas y 1.342 regantes los cuales se abastecen del recurso hídrico a través de 17 puntos de entrega, todos ellos corresponden a canales.
 
-\section{Infraestructura para la distribución de las Aguas (JVRE).}
+\section{Infraestructura de almacenamiento y distribución de aguas (JVRE).}
 La distribución de las aguas en la cuenca del Elqui se lleva a cabo mediante dos embalses y una red de canales de 600,1 km. de longitud.
 
 \subsection{Embalse La Laguna.} %insertar figura%
@@ -206,7 +501,7 @@ Río Elqui Bajo Puclaro & 3ª & 241,88 & 0,22 & 0,14 & 45,07 & 287,32 \\ \midrul
 
 
 
-		\subsection{Levantamiento de información de la distribución hídrica JVRE}
+		\subsection{Levantamiento de información sobre la distribución hídrica JVRE}
 		En un estudio realizado por la consultora RODHOS, donde pretendían simular escenarios del sistema hídrico de la cuenca del río Elqui, la Junta de Vigilancia del Río Elqui y sus Afluentes les proporcionó información sobre los criterios que establecen el cálculo de desmarque para la temporada. Estos criterios se señalan a continuación:\bigskip
 		
 		\begin{itemize}
@@ -220,16 +515,54 @@ Río Elqui Bajo Puclaro & 3ª & 241,88 & 0,22 & 0,14 & 45,07 & 287,32 \\ \midrul
 		
 		\subsection{Reuniones Técnicas}
 		
+		Con el objeto de reunir información específica sobre la regla operacional que utilizan en la JVRE, tanto de los criterios de asignación, regulación y distribución de las aguas que realizan en la actualidad, como las metodologías utilizadas en temporadas anteriores. De esta manera, se realizaron 3 reuniones programadas con personas involucrados directamente en la toma de decisión de la distribución del agua en la cuenca. \bigskip
 		
-		Se desarrollaron reuniones con las personas involucrados directamente en la toma de decisiones en la distribución del agua en la cuenca. Esto permitirá reunir antecedentes de los mecanismos, criterios y metodologías que utilizan para la asignación dentro de la temporada. Para ello, se realizaron 3 reuniones técnicas con el gerente de la JVRE, Dagoberto Bettancourt, principal responsable de la distribución hídrica a los usuarios de la cuenca.
-		
-		El día 19 de enero de 2018 se realizó una reunión técnica en las dependencias de la Universidad de La Serena, Campus Limarí, Ovalle. En ella, participó el Gerente de la Junta de Vigilancia del Río Elqui,  y sus Afluentes Dagoberto Bettancourt junto con el equipo del laboratorio PROMMRA.
-		
-		indicó criterios en la toma de decisión en la distribución de las aguas en la cuenca, respecto a distintos escenarios que 
+		\textit {Primera Reunión}\bigskip
 		
 		
-		\subsection{Selección y jerarquización de criterios de operación}
-		\subsection{Validación de criterios de operación}\bigskip
+		El día 11 de enero de 2018 se realizó la primera reunión técnica en las dependencias de la JVRE, Embalse Puclaro. En ella, participó el Gerente de la JVRE Dagoberto Bettancourt, principal actor en la toma de decisión de la distribución de las aguas a sus usuarios.\bigskip
+		
+		Dentro de lo conversado, el gerente de la JVRE informa sobra los principales aspectos que involucran la distribución de las aguas en la cuenca del río Elqui, las que a continuación se mencionan.
+		
+		\begin{itemize}
+		
+		\item La JVRE establece su temporada hídrica entre el 1 de Septiembre y el 31 de Agosto del siguiente año. En dicho periodo, se asigna el agua en función a un desmarque (\%) que se fija a inicio de temporada, en base al caudal nominal (1 L/s) por acción. Dichos desmarques poseen variabilidad mensual de acuerdo a las demandas que existan dentro de la cuenca. Sin embargo, al término de la temporada, estos se ajustarán con el desmarque asignado al inicio.
+		
+		\item Existen 5 sectores dentro de la cuenca que la JVRE designa para su operación, el cual se manejan con desmarques diferenciados en función de lo ofertado por los cauces naturales, la regulación que estos posean y la demanda existente, teniendo siempre en cuenta que los desmarques sean equivalentes al desmarque asignado a inicio de temporada. Río Claro; Cochiguaz; Río Turbio; Río Elqui sobre Puclaro; y Río Elqui Bajo Puclaro componen dichos sectores.
+		
+		\item Dentro de la asignación del desmarque, los embalses La Laguna y Puclaro, son de gran importancia, debido a la regulación que realizan para entregar de forma pertinente el agua a distribuir, y su participación dentro de la asignación, como volumen almacenado a inicio de temporada. Sin embargo, se debe tener en cuenta que los volúmenes almacenados al término de esta, permitirán tener un respaldo para la asignación de la siguiente temporada, es por esto que en estas obras de acumulación, su operación debe ser manejado de manera óptima.
+		
+		
+		\end{itemize}		\bigskip
+		
+		\textit {Segunda Reunión}\bigskip
+		
+		Una segunda reunión se realizó el día 19 de enero de 2018, en las dependencias de la Universidad de La Serena, Campus Limarí, Ovalle. En ella participó nuevamente el gerente de la JVRE, junto con miembros del laboratorio PROMMRA. \bigskip
+		
+		En esta reunión, se indagó con mas detalle el concepto de \textit {Desmarque}, indicador (\%) de la asignación de la temporada del recurso hídrico, en función de los derechos de aprovechamiento. Además, se conocieron algunos criterios e indicadores que utiliza la Junta para distribuir el agua según lo asignado a inicio de la temporada (Septiembre). Los nuevos antecedentes de la regla operacional actual se resumen en los siguientes párrafos.
+		
+		\begin{itemize}
+		
+		\item Hasta el año 2012, el embalse Puclaro al término de la temporada, debía almacenar el 50\% del volumen con que se inició. Sin embargo, a partir de ese año, el volumen almacenado al 31 de agosto debe fluctuar entre 70 - 100 $Mm^3$; situación que fue gatillada por la sequía vivida en esos años, donde los volúmenes a repartir llegaron a gestionarse con un desmarque del 20\%, en el año 2015. De esta manera, manteniendo estos volúmenes al término de una temporada, se pretende generar una menor incertidumbre en la asignación del siguiente periodo.
+		
+		\item El cálculo del desmarque, es un proceso que se realiza cada temporada con cierta incertidumbre, ya que se debe distribuir en las acciones que la JVRE gestiona, el agua total generada por la cuenca en la temporada (Septiembre - Agosto), dato que al 1 de septiembre se desconoce en gran parte. Esto se debe, a que aún no ocurren los deshielos de primavera - verano, principal aporte a los cauces naturales de la cuenca; sumado a la posible ocurrencia de precipitaciones y su escurrimiento a los cauces, en el periodo invernal del siguiente año, principalmente. De esta manera, el cálculo del agua generada por la cuenca como volumen total/temporada, se estima mediante correlaciones entre los datos disponibles, tales como altura de nieve, precipitaciones ocurridas hasta la fecha, entre otras; sumado a la apreciación de imágenes satelitales de la cobertura de nieve y su posible comportamiento en los meses siguientes. Con estos antecedentes, y la revisión de antecedentes hidrológicos históricos, bajo un panorama hidroclimático similar, se realiza una estimación del total de agua generada por la cuenca en la temporada, su comportamiento mensual, y por ende, el \textit {Desmarque (\%)} a aplicar en la temporada.
+		
+		\item Debido a que el comportamiento hidrológico en la temporada es un dato estimado, el cual mantiene cierta incertidumbre; la JVRE maneja datos de ciertas estaciones fluviométricas como indicadores del comportamiento de los cauces naturales en la cuenca, con el fin de evidenciar el comportamiento del panorama hídrico estimado, manteniendo la distribución hídrica acorde a lo asignado a inicio de temporada. Estos indicadores, permitirán gestionar el recurso hídrico, como por ejemplo, a partir de la regulación de los embalses de acumulación, Puclaro y La Laguna. Cabe destacar, que el embalse La Laguna opera habitualmente entre los meses de diciembre a abril, o cuando el caudal pasante en la estación fluviométrica de la DGA, Elqui en Algarrobal sea inferior a 4 $ m^3/s$.
+		
+		\end{itemize}		\bigskip
+		
+		\textit {Tercera Reunión}\bigskip
+		
+	Esta reunión se desarrollo en el establecimiento de la Junta de Vigilancia del Río Elqui y sus Afluentes, ubicado en el embalse Puclaro, Vicuña; donde participó el presidente de la Junta, Pelayo Alonso, el gerente, Dagoberto Bettancourt, junto con miembros del laboratorio PROMMRA. 
+		
+		
+		\subsection{Entrevistas}\bigskip
+		
+		\subsection{Descripción de la regla operacional existente}\bigskip
+		
+			\subsection{Selección y jerarquización de criterios de operación}\bigskip
+			
+			\subsection{Validación de criterios de operación}\bigskip
 
 \section{Modelo Hidrológico Base}\bigskip
 
