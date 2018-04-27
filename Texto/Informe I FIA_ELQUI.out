@@ -55,11 +55,20 @@
 \BOOKMARK [2][-]{subsection.19.4}{Descripción de la regla operacional existente}{section.19}% 55
 \BOOKMARK [2][-]{subsection.19.5}{Selección y jerarquización de criterios de operación}{section.19}% 56
 \BOOKMARK [2][-]{subsection.19.6}{Validación de criterios de operación}{section.19}% 57
-\BOOKMARK [1][-]{section.20}{Modelo Hidrológico Base}{}% 58
-\BOOKMARK [2][-]{subsection.20.1}{Topología del Modelo}{section.20}% 59
-\BOOKMARK [2][-]{subsection.20.2}{Actualización del modelo Elqui}{section.20}% 60
-\BOOKMARK [3][-]{subsubsection.20.2.1}{Incorporación Regla Operacional JVRE}{subsection.20.2}% 61
-\BOOKMARK [2][-]{subsection.20.3}{Calibración y Validación del modelo Elqui}{section.20}% 62
-\BOOKMARK [1][-]{section.21}{Citas}{}% 63
-\BOOKMARK [2][-]{subsection.21.1}{Información importante acerca de las citas}{section.21}% 64
-\BOOKMARK [1][-]{section.22}{Tablas}{}% 65
+\BOOKMARK [1][-]{section.20}{Modelo\040WEAP}{}% 58
+\BOOKMARK [1][-]{section.21}{Modelo Hidrológico Base}{}% 59
+\BOOKMARK [2][-]{subsection.21.1}{Descripción del Modelo: Cuenca del Río Elqui CRDP - PROMMRA}{section.21}% 60
+\BOOKMARK [3][-]{subsubsection.21.1.1}{Cauces\040Naturales}{subsection.21.1}% 61
+\BOOKMARK [3][-]{subsubsection.21.1.2}{Cauces\040Artificiales}{subsection.21.1}% 62
+\BOOKMARK [3][-]{subsubsection.21.1.3}{Embalses}{subsection.21.1}% 63
+\BOOKMARK [3][-]{subsubsection.21.1.4}{Acuíferos}{subsection.21.1}% 64
+\BOOKMARK [3][-]{subsubsection.21.1.5}{Sitios\040de\040Demanda}{subsection.21.1}% 65
+\BOOKMARK [3][-]{subsubsection.21.1.6}{Sitios de Demanda Agrícola}{subsection.21.1}% 66
+\BOOKMARK [2][-]{subsection.21.2}{Actualización del modelo Elqui}{section.21}% 67
+\BOOKMARK [3][-]{subsubsection.21.2.1}{Temporada Hídrica JVRE}{subsection.21.2}% 68
+\BOOKMARK [3][-]{subsubsection.21.2.2}{Operación de los embalse en el modelo}{subsection.21.2}% 69
+\BOOKMARK [3][-]{subsubsection.21.2.3}{Incorporación Regla Operacional JVRE}{subsection.21.2}% 70
+\BOOKMARK [2][-]{subsection.21.3}{Calibración y Validación del modelo Elqui}{section.21}% 71
+\BOOKMARK [1][-]{section.22}{Citas}{}% 72
+\BOOKMARK [2][-]{subsection.22.1}{Información importante acerca de las citas}{section.22}% 73
+\BOOKMARK [1][-]{section.23}{Tablas}{}% 74
